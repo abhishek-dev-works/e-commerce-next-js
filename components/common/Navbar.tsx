@@ -29,13 +29,13 @@ function Navbar() {
   ];
 
   return (
-    <div className="sticky">
+    <div className="sticky top-0  z-10 bg-almond-700 backdrop-filter backdrop-blur-lg bg-opacity-40 ">
       <div className="h-24  flex items-center justify-around border-b-2 z-10 relative">
         <div className="text-4xl font-extrabold ">logo</div>
         <div className="flex gap-10">
           {navItems.map((item) => (
             <Link href={item.path} key={item.id}>
-              {item.title}
+              {item.title} 
             </Link>
           ))}
         </div>
